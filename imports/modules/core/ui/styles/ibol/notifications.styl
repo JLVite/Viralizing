@@ -1,0 +1,98 @@
+@require 'variables.styl'
+
+.notifications-wrapper {
+  .notifications-br {
+    width: 380px !important;
+
+    .notification {
+      background: #FAFAFA !important;
+      border: 2px solid Color-Copper !important;
+      border-radius: 8px !important;
+      overflow: initial !important;
+      padding: 15px !important;
+
+      &::before {
+        top: 0;
+        background: none !important;
+        margin-top: 0;
+        right: 18px;
+        left: inherit;
+        width: 0;
+        height: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-radius: 0;
+        border-top: 40px solid Color-Copper;
+      }
+
+      .notification-dismiss {
+        background: #fff !important;
+        font-size: 18px !important;
+        height: 26px !important;
+        width: 26px !important;
+        padding: 0;
+        font-weight: 400 !important;
+        line-height: 23px !important;
+        padding-left: 4px;
+        top: -9px !important;
+        right: -9px !important;
+
+        &::before {
+          content: "\f00d" !important;
+          color: #6A6A6A !important;
+        }
+      }
+
+      .time {
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+      }
+
+      &.notification-success {
+        border-color: #7ED321 !important;
+
+        &::before {
+          background: none !important;
+          border-top-color: #7ED321 !important;
+        }
+      }
+
+      &.notification-error {
+        border-color: #D0021B !important;
+
+        &::before {
+          background: none !important;
+          border-top-color: #D0021B !important;
+        }
+      }
+
+      &.notification-warning {
+        border-color: #F8E81C !important;
+
+        &::before {
+          background: none !important;
+          border-top-color: #F8E81C !important;
+        }
+      }
+
+      &.notification-info {
+        border-color: #4A90E2 !important;
+
+        &::before {
+          background: none !important;
+          border-top-color: #4A90E2 !important;
+        }
+      }
+
+      &.notification-info {
+        border-color: Color-Copper !important;
+
+        &::before {
+          background: none !important;
+          border-top-color: Color-Copper !important;
+        }
+      }
+    }
+  }
+}

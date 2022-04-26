@@ -1,0 +1,403 @@
+.social-search {
+  .search-form {
+    text-align: center;
+    display: table;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 260px);
+
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+
+      h1 {
+        font-size: 1.7em
+      }
+
+      .form-control {
+        margin-top: 20px
+      }
+
+      .profile-list {
+        margin-bottom: 25px;
+        margin-top: 20px;
+
+        li {
+          position: relative;
+
+          .selected {
+            position: absolute;
+            color: Color-Dark-Gray;
+            background: #fff;
+            z-index: 9;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            right: -3px;
+            top: -3px;
+            display: none;
+          }
+
+          &.active {
+            .selected {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .search-list {
+    margin-top: 20px;
+    column-count: 3;
+    column-gap: 1em;
+
+    .element {
+      display: inline-block;
+      margin: 0 0 1em;
+      width: 100%;
+    }
+  }
+
+  .query-results {
+    .header {
+      height: 68px;
+      margin-bottom: 25px;
+
+      h1 {
+        float: left;
+        text-transform: capitalize;
+      }
+
+      .profile-list {
+        text-align: center;
+        margin: 0px;
+        
+        .social-icon {
+          &.active {
+            filter: grayscale(100%);
+            opacity: 0.7;
+          }
+        }
+        
+      }
+    }
+  }
+
+  .trending-places {
+    padding: 40px;
+
+    .places {
+      margin-bottom: 20px;
+
+      select {
+        border: none;
+        font-size: 1.2em;
+        color: #37474f;
+        outline: none;
+        cursor: pointer;
+        margin: 0;
+        width: 100%;
+        padding: 5px;
+        background: #fff;
+        border-radius: 3px;
+        height: 170px
+
+        option {
+          padding: 5px;
+
+          &:checked {
+            background: #c28c58 linear-gradient(0deg, #c28c58 0%, #c28c58 100%);
+            color: #fff;
+          }
+        }
+
+        optgroup {
+          option:
+
+          :before {
+            content: ' ';
+          }
+        }
+      }
+    }
+
+    .trends {
+      .country-name {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+.twitter-preview {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  text-align: left;
+
+  .profile {
+
+    .avatar {
+      margin-right: 10px;
+
+      img {
+        border-radius: 4px;
+      }
+    }
+
+    .information {
+      display: inline-block;
+
+      .name {
+        font-weight: bold;
+        color: #292f33;
+        font-size: 1.1em;
+      }
+
+      .screen-name {
+        color: #8899a6;
+        line-height: 1em;
+
+        .time {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .post {
+    margin-top: 15px;
+
+    .message {
+      font-size: 1.2em;
+      font-weight: 400;
+      color: #292f33;
+    }
+
+    .media {
+      img {
+        width: 100%;
+      }
+    }
+
+    .video {
+      margin-top: 10px;
+    }
+  }
+
+  .network {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    i {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: center;
+    }
+  }
+}
+
+.google-preview {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  text-align: left;
+
+  .title {
+    color: #1a0dab;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .link {
+    color: #006621;
+    font-size: 0.97em;
+  }
+
+  .description {
+    color: #545454;
+  }
+
+  .network {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    i {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: center;
+    }
+  }
+}
+
+.facebook-preview {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  text-align: left;
+
+  .profile {
+
+    .avatar {
+      margin-right: 10px;
+
+      img {
+        border-radius: 0;
+        border: 1px solid #ddd;
+      }
+    }
+
+    .information {
+      display: inline-block;
+
+      .name {
+        font-weight: bold;
+        color: #365899;
+        font-size: 1.1em;
+      }
+
+      .time {
+        color: #90949c;
+        font-size: 0.9em;
+        line-height: 0.9em;
+      }
+    }
+  }
+
+
+  .post {
+    margin-top: 15px;
+
+    .message {
+      color: #1d2129;
+    }
+
+    .media {
+      img {
+        width: 100%;
+      }
+    }
+
+    .video {
+      margin-top: 10px;
+    }
+  }
+
+
+  .network {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    i {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: center;
+    }
+  }
+}
+
+.instagram-preview {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  text-align: left;
+
+  .profile {
+    display: block;
+    width: 100%;
+    height: 40px;
+
+    .avatar {
+      margin-right: 10px;
+      float: left;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .information {
+      float: left;
+      margin-top: 8px;
+
+      .name {
+        font-weight: bold;
+        color: #4c68d7;
+        font-size: 1.1em;
+      }
+    }
+
+    .time {
+      color: #999;
+      font-size: 0.9em;
+      line-height: 0.9em;
+      float: right;
+      margin-top: 12px;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .post {
+    margin-top: 15px;
+
+    .message {
+      color: #262626;
+      margin-top: 14px;
+
+      .name {
+        font-weight: 600;
+        color: #4c68d7;
+        margin-right: 5px;
+      }
+    }
+
+    .media {
+      img {
+        width: 100%;
+      }
+    }
+
+    .video {
+      margin-top: 10px;
+    }
+  }
+
+
+  .network {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    i {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: center;
+    }
+  }
+}
+

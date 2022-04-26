@@ -1,0 +1,639 @@
+@require 'variables.styl'
+
+.account-header {
+  background: #232323;
+  height: 150px;
+  color: Color-White;
+  margin-top: 0 !important;
+
+  & > div {
+    height: 100%
+  }
+
+  .social-avatar {
+    float: left;
+    margin: 50px 50px;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .data {
+    text-transform: uppercase;
+    margin: 10px;
+    left: 15%;
+
+    h2 {
+      color: 'black';
+      font-size: 1.5em;
+      margin-bottom: 2px;
+    }
+
+    span {
+      display: block
+      font-size: 0.9em;
+    }
+
+    a {
+      font-size: 1.6em;
+    }
+
+    .followers {
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .profile {
+    background: url("https://images.unsplash.com/photo-1473157548731-112b3b175783?dpr=2&auto=format&fit=crop&w=1199&h=912&q=80&cs=tinysrgb&crop=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .groups {
+    .list {
+      float: right;
+      text-align: left;
+      margin: 24px 25px;
+      max-height: 99px;
+      overflow: scroll;
+      width: 95%;
+
+      .select-wrap {
+        .caret {
+          font-family: FontAwesome;
+          position: relative;
+          display: inline-block;
+          font-style: normal;
+          font-weight: 400;
+          text-rendering: auto;
+          speak: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+          -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+
+          &::before {
+            content: "\f107";
+          }
+        }
+
+        select {
+          -webkit-appearance: none;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+
+      .profile-list {
+        li {
+          background: none;
+          margin: 7px;
+        }
+      }
+    }
+
+    .loading-screen {
+      height: 150px;
+
+      .content {
+        color: #fff;
+
+        & > div > div {
+          background-color: #fff !important;
+        }
+
+        h3 {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}
+
+.account-type-icon {
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+  border: 3px solid #858585;
+  border-radius: 50%;
+  line-height: 52px;
+
+  &.brand {
+    /*
+    border-color: #75489f;
+    color: #75489f;
+    */
+    border-color: Color-Green;
+    color: Color-Green;
+  }
+
+  &.influencer {
+    /*
+    border-color: #59c5df;
+    color: #59c5df;
+    */
+    border-color: Color-Green;
+    color: Color-Green;
+  }
+
+  &.both {
+    border-color: Color-Copper;
+    color: Color-Copper;
+  }
+
+  &.not {
+    border-color: #f62026;
+    color: #f62026;
+  }
+}
+
+.account-invite-view {
+  h1 {
+    font-size: 1.6em;
+
+    .owner {
+      text-transform: capitalize;
+    }
+  }
+
+  .form-avatar {
+    margin: 20px;
+  }
+
+  .controls {
+    margin-top: 30px;
+    margin-bottom: 4px;
+
+    .btn {
+      margin-left: 45px
+    }
+  }
+}
+
+.account-pages {
+  width: 740px;
+  text-align: left;
+  height: 280px
+
+  .controls {
+    margin-bottom: 25px;
+  }
+
+  .loading-screen {
+    height: 300px;
+    width: 100%;
+  }
+
+  .no-results {
+    height: 300px;
+    width: 100%;
+    display: table;
+
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+      i {
+        font-size: 6em
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  .pages-list {
+    margin-bottom: 15px;
+
+    .list-group-item {
+      .media {
+        background: Color-Clear-Gray;
+        padding: 12px;
+        border-radius: 4px;
+      }
+
+      .selected {
+        position: absolute;
+        color: Color-Dark-Gray;
+        background: #fff;
+        z-index: 9;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 23px;
+        line-height: 34px;
+        text-align: center;
+        padding-left: 2px;
+        right: 14px;
+        top: 14px;
+        display: none;
+      }
+
+      &.active {
+        color: Color-Gray-Letter;
+
+        .selected {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.account-settings {
+  .react-tagsinput {
+    .react-tagsinput-input {
+      width: 100%;
+    }
+  }
+}
+
+.avatar-horizontal-list {
+  overflow-x: overlay;
+  display: flex;
+
+  .form-avatar {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+
+    .social-avatar {
+      margin: auto;
+    }
+
+    .title {
+      display: block;
+      width: 70px;
+    }
+  }
+}
+
+.account-pricing {
+  &.panel {
+    text-align: center;
+  }
+
+  .post-price {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .price-range {
+      color: Color-Copper;
+      font-size: 1.5em;
+    }
+  }
+
+  .price-block {
+    .input-group {
+      width: 240px;
+    }
+
+    .input-group-addon {
+      background: none;
+      border: none;
+      font-size: 1.3em;
+      font-weight: 400;
+    }
+
+    .form-control {
+      font-size: 1.3em;
+      text-align: center
+
+      &:not([value=""]) {
+        background: none;
+        border: none;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .account-pricing-horizontal-list {
+    display: flex;
+    overflow: auto;
+    width: 100%
+
+    .price {
+      min-width: 140px !important;
+      margin: 0 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      label {
+        height: 45px;
+      }
+    }
+  }
+
+  .legend {
+    position: fixed
+    bottom: 20px;
+  }
+}
+
+.account-summary-profile {
+  .campaigns {
+    .count {
+      text-align: center;
+    }
+  }
+
+  .account-type-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 35px;
+    margin 10px;
+    position: relative;
+
+    .name {
+      font-size: 12px;
+      color: #76838f;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .category-list {
+    background: #fff;
+    height: 75px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    padding: 7px;
+  }
+
+  .group-list {
+    .group {
+      background: #fff;
+      display: inline-block;
+      padding: 5px;
+      margin-right: 7px;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.gallery-item {
+  .slick-slide {
+    height: 220px;
+
+    & > div {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  .slick-arrow {
+    font-size: 30px;
+    color: #444;
+
+    &::before {
+      content: ""
+    }
+
+    i {
+      position: absolute;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+.account-target {
+  .target-title {
+    padding: 0;
+  }
+}
+
+.profile-card {
+  height: 370px;
+  padding: 0;
+  margin: 40px 32px;
+  width: 245px;
+  font-size: 10px;
+  background-color: rgba(218, 218, 218, 0.3);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  table th{
+    text-align: center;
+    border: none;
+
+    img {
+      height: 25px;
+      width: 25px;
+    }
+}
+
+table td {
+  text-align: center;
+  border: none;
+}
+
+th i {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  bottom: 7px;
+}
+
+.social-icon.instagram::before {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: 23px;
+  bottom: 4px;
+
+}
+
+.social-icon.twitter::before {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: 23px;
+  bottom: 4px;
+
+}
+
+.social-icon.facebook::before {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: 23px;
+  bottom: 4px;
+
+}
+
+.social-icon.google::before {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: 23px;
+  bottom: 4px;
+
+}
+
+.tag {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  border: none;
+
+  table th{
+    padding-top: 12px;
+  }
+}
+
+.container-img {
+  height: 120%;
+}
+
+}
+
+.profile-list .dropdown button i{
+  width: 50px;
+  line-height: 50px;
+}
+
+.profile-list{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon-fb{
+  list-style: none;
+  background: #efefef;
+  display: inline-block;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover{
+  border-color: #c28c58;
+  background-color: #c28c58;
+}
+
+.list-dropdown .dropdown-menu{
+	top: inherit !important;
+	bottom: 100%
+}
+
+.rbc-date-cell.rbc-now.rbc-current a{
+  border: 1px solid #c28c58 !important;
+  border-radius: 3px !important;
+  color: white !important;
+  background-color: #c28c58 !important;
+}
+
+.form-section p{
+  margin: 0;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  min-height: 40px;
+}
+
+.pagination-buttons{
+  width: 40px; 
+  height: 40px;
+  background-color: transparent;
+  border-width: thin;
+}
+
+.pagination-buttons-first{
+  width: 40px; 
+  height: 40px;
+  background-color: transparent;
+  border-width: thin;
+  border-radius: 5px 0 0 5px;
+}
+
+.active-button{
+  width: 40px; 
+  height: 40px;
+  background-color: #c28c58;
+  color: white;
+  border-color: #c28c58;
+}
+
+.pagination-container{
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.css-1pcexqc-container .css-bg1rzq-control {
+  background-color: rgba(218,218,218,0.3);
+  border-color: rgba(218,218,218,0.3);
+}
+
+.reviews {
+  padding: 10px;
+  .panel-body {
+    overflow: scroll;
+    padding: 30px 0px;
+    height:425px;
+  }
+
+  .line {
+    border: 1px solid;
+    margin: 10px 0;
+  }
+
+  .part-of {
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+
+    div:first-child {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0px 30px 0px 30px;
+    }
+    .comment {
+      background-color: white;
+      padding: 10px 10px 10px 20px
+      border-radius: .286rem;
+
+      .dv-star-rating {
+        margin: 0;
+      }
+    }
+  }
+}
+

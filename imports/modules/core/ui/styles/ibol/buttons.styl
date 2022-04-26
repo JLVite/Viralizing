@@ -1,0 +1,118 @@
+@require 'variables.styl'
+
+.btn {
+  border-radius: 0;
+  padding: 10px 20px;
+
+  &.btn-primary {
+    background: Color-Copper;
+    border-color: Color-Copper;
+  }
+
+  &.btn-primary:active:hover,
+  &.btn-primary:active:focus,
+  &.btn-primary:active.focus,
+  &.btn-primary.active:hover,
+  &.btn-primary.active:focus,
+  &.btn-primary.active.focus,
+  .open > .btn-primary.dropdown-toggle:hover,
+  .open > .btn-primary.dropdown-toggle:focus,
+  .open > .btn-primary.dropdown-toggle.focus {
+    border-color: darken(Color-Copper, 10) !important;
+    background-color: darken(Color-Copper, 10) !important;
+  }
+
+  &.spinner {
+    i {
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 3000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 3000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 3000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+
+      animation-name: spin;
+      animation-duration: 3000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+  }
+
+  &.table-button {
+    transform: translateY(7px) translateX(10px);
+    position: absolute;
+    z-index: 9;
+  }
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ibol-label {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #858585;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+
+  &.draft {
+    background: Color-Soft-Gray;
+    border-color: darken(Color-Soft-Gray, 30%);
+  }
+
+  &.active {
+    background: Color-Green;
+    border-color: darken(Color-Green, 30%);
+  }
+
+  &.paused {
+    background: Color-Red;
+    border-color: darken(Color-Red, 30%);
+  }
+
+  &.completed {
+    background: Color-Copper;
+    border-color: darken(Color-Copper, 30%);
+  }
+}

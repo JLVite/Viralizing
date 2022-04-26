@@ -1,0 +1,233 @@
+.ibol-table {
+  .react-bs-table-container {
+    .react-bs-table-tool-bar {
+      .form-group {
+        float: right;
+        margin-bottom 15px;
+      }
+    }
+
+    .react-bs-table {
+      border-radius: 0;
+
+      table {
+        thead {
+          th {
+            text-align: center !important;
+            font-weight: 500;
+            font-size: 1.15em;
+
+            .order {
+              .caret {
+                font-family: 'Web Icons';
+                position: relative;
+                display: inline-block;
+                font-style: normal;
+                font-weight: 400;
+                text-rendering: auto;
+                speak: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-transform: translate(0, 0);
+                -ms-transform: translate(0, 0);
+                -o-transform: translate(0, 0);
+                transform: translate(0, 0);
+
+                &::before {
+                  content: "\f181";
+                }
+              }
+
+              &.dropdown,
+              .dropdown {
+                .caret {
+                  &::before {
+                    content: "\f181";
+                  }
+                }
+              }
+
+              &.dropup,
+              .dropup {
+                .caret {
+                  border-bottom: none;
+
+                  &::before {
+                    content: "\f180";
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        tbody {
+          td {
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle
+
+            a {
+              text-align: center;
+              color: Color-Black;
+              text-decoration: none;
+
+              .icon {
+                width: inherit;
+                height: inherit;
+                font-size: 20px;
+              }
+            }
+
+            .social-avatar {
+              display: inline-block;
+            }
+
+            .icon-label {
+              display: inline-block;
+              text-transform: capitalize;
+              margin-left: 15px;
+            }
+
+            .icon {
+              width: 55px;
+              height: 55px;
+              font-size: 30px;
+              display: inline-block;
+              margin: 0 5px;
+              text-align: center;
+
+              &.size-35 {
+                width: 35px;
+                height: 35px;
+                margin: 0 5px;
+
+                i {
+                  font-size: 22px;
+                  line-height: 36px;
+                }
+              }
+
+              &.circle {
+                border: 3px solid Color-Dark-Gray;
+                border-radius: 50%;
+                line-height: 52px;
+
+                &.brand {
+                  border-color: Color-Purple;
+                  color: Color-Purple
+                }
+
+                &.influencer {
+                  border-color: Color-Sky-Blue;
+                  color: Color-Sky-Blue;
+                }
+
+                &.not {
+                  border-color: Color-Red;
+                  color: Color-Red;
+                }
+              }
+            }
+
+            .image {
+              height 55px;
+            }
+
+            .tag-list {
+              .tag {
+                display: inline-block;
+                background: #DADADA;
+                color: #444444;
+                padding: 7px 10px 7px 29px;
+                margin-right: 7px;
+                margin-bottom: 7px;
+                position: relative;
+
+                &::before {
+                  content: ' ';
+                  position: absolute;
+                  left: 10px;
+                  top: 12px;
+                  width: 10px;
+                  height: 10px;
+                  background: #fff;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+.icon.accountType {
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+
+  &.size-35 {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+
+    i {
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+
+  &.circle {
+    border: 3px solid Color-Dark-Gray;
+    border-radius: 50%;
+    line-height: 52px;
+
+    &.brand {
+      border-color: Color-Purple;
+      color: Color-Purple
+    }
+
+    &.influencer {
+      border-color: Color-Sky-Blue;
+      color: Color-Sky-Blue;
+    }
+
+    &.not {
+      border-color: Color-Red;
+      color: Color-Red;
+    }
+  }
+}
+
+.profile-colors{
+  margin: 0 0 0 100px;
+
+  div {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+
+  i {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    border: 3px solid Color-Dark-Gray;
+    border-radius: 50%;
+    line-height: 52px;
+  }
+
+  p {
+    color: #2e2e2e;
+  }
+}

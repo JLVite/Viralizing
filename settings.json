@@ -1,0 +1,51 @@
+{
+  "AWSRegion":"us-east-1",
+  "AWSAccessKeyId":"AKIAJGTCADJITF2H73FA",
+  "AWSSecretAccessKey":"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",
+  "public":{
+    "stripe":{
+      "publishableKey":"pk_test_0S77yeMnJrFWuR1Qg7AYIOKP"
+    }
+  },
+  "private": {
+    "paypal":{
+      "clientId":"AW6pl7OKzHwuI-ckqiONYW6Tuw8o23SbRQO02ew0spjXH4lsJPmhNWipsi6HEwNhVcN588FMiRDaDh3L",
+      "secret": "EA1Nq7h97qXXlxM_FfziGr-4doxhdU7XhOpCvXi4INRQ8FNSN_3OrNXdZPtd00UCooIjxD08RkvIXwuF"
+    },
+    "zendesk": {
+      "username": "hello@survmetrics.com",
+      "token": "AGTzP1xIli8qGRcNyphKlJnkoiImhPJtDq4gYcRn",
+      "remoteUri": "https://survmetrics.zendesk.com/api/v2"
+    },
+    "mixpanel": {
+      "token": "cd3b1d61ebb4c8d381a7cc39ae92b4f6",
+      "secret": "1040bb4c9cbf0f1290bc2ccdfa1da081"
+    },
+    "stripe":{
+      "secretKey":"sk_test_63VFILKWQzmZnBCjljLEiGTW"
+    },
+    "aes": {
+      "passPhrase": "kqD(p>f$$vA^sDjygHn)naGdrVAo%hjXtM9yTBh"
+    },
+    "networks": {
+      "facebook": {
+        "appId": "1192359630860949",
+        "secret": "8e22e0a27cdf0dd6e18e674b02648fdf"
+      },
+      "twitter": {
+        "consumerKey": "Cy89zgkwhQze0PseZVIazvkMv",
+        "secret": "UA9xRYIpx7wBuyFdzNE7S8ZkdpNsAbO0nL7A7Mv6sajwiOW77g"
+      },
+      "instagram": {
+        "clientId": "0aea24cd26c04d03bd70cbe1bde153b9",
+        "secret": "f0c2da14d29f46e6812274bd9082576a"
+      },
+      "google": {
+        "clientId": "666001639290-4ockfbrs6nruqfds6jkugk1g8mctffe2.apps.googleusercontent.com",
+        "secret": "xmMAWuSkSv99ENIjVCHNTUf9",
+        "searchApiKey": "AIzaSyBcythzarlyApVyP89lJ8W4QagEYVhru2E",
+        "AdWordsToken": "hLZV3FmzDDBt3l71uTSJUg"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@require 'variables.styl'
+
+.panel {
+  background: Color-Clear-Gray;
+
+  &.white {
+    background: #fff;
+    box-shadow: none;
+  }
+
+  .list-group-item {
+    background: none;
+    padding: 4px 0px;
+  }
+
+  .panel-body {
+    &.slim {
+      padding: 20px;
+
+      .content-padding-30 {
+        padding: 0 !important;
+      }
+    }
+
+    &.ultra-slim {
+      padding: 0;
+    }
+  }
+}

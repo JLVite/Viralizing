@@ -1,0 +1,212 @@
+@require 'variables.styl'
+
+.social-profile {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  position: relative;
+  max-height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  right: 82%;
+  bottom: 40px;
+
+
+  &.border {
+    border: 3px solid Color-Black;
+    border-radius: 50%;
+    padding: 3px;
+
+    &.influencer {
+      /*border-color: Color-Sky-Blue;*/
+      border-color: Color-Copper;
+    }
+
+    &.brand {
+      /*border-color: Color-Purple;*/
+      border-color: Color-Copper;
+    }
+
+    &.both {
+      /*border-color: Color-Green;*/
+      border-color: Color-Copper;
+    }
+  }
+
+  .fan-page {
+    width: 42%;
+    height: 42%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: #fff;
+    padding: 2px;
+  }
+
+  img {
+    height: 140px;
+    width: 140px;
+  }
+
+  i {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &.size-75 {
+    max-width: 75px;
+    max-height: 75px;
+
+    i {
+      width: 20px;
+      height: 20px;
+      line-height: 23px;
+      font-size: 13px;
+    }
+  }
+
+  &.size-50 {
+    width: 50px;
+    height: 50px;
+
+    i {
+      width: 20px;
+      height: 20px;
+      line-height: 21px;
+      font-size: 11px;
+    }
+  }
+
+  &.size-35 {
+    width: 35px;
+    height: 35px;
+
+    i {
+      line-height: 17px;
+      width: 16px;
+      height: 16px;
+      font-size: 9px;
+    }
+  }
+}
+
+
+.social-avatar {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  position: relative;
+  max-height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.border {
+    border: 3px solid Color-Black;
+    border-radius: 50%;
+    padding: 3px;
+
+    &.influencer {
+      /*border-color: Color-Sky-Blue;*/
+      border-color: Color-Copper;
+    }
+
+    &.brand {
+      /*border-color: Color-Purple;*/
+      border-color: Color-Copper;
+    }
+
+    &.both {
+      /*border-color: Color-Green;*/
+      border-color: Color-Copper;
+    }
+  }
+
+  .fan-page {
+    width: 42%;
+    height: 42%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: #fff;
+    padding: 2px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  i {
+    width: 30px;
+    height: 30px;
+    right: -2px;
+    bottom: -2px;
+    position: absolute;
+    line-height: 32px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &.size-75 {
+    max-width: 75px;
+    max-height: 75px;
+
+    i {
+      width: 20px;
+      height: 20px;
+      line-height: 21px;
+      font-size: 13px;
+    }
+  }
+
+  &.size-50 {
+    width: 50px;
+    height: 50px;
+
+    i {
+      width: 20px;
+      height: 20px;
+      line-height: 21px;
+      font-size: 13px;
+    }
+  }
+
+  &.size-35 {
+    width: 35px;
+    height: 35px;
+
+    i {
+      line-height: 17px;
+      width: 16px;
+      height: 16px;
+      font-size: 9px;
+    }
+  }
+}
+
+.profile-list {
+  .social-avatar {
+    i {
+      height: 16px;
+      width: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.list-group {
+  .social-avatar {
+    display: inline-block;
+  }
+}
+
+.form-control-static {
+  .social-avatar {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}

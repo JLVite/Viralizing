@@ -1,0 +1,79 @@
+@require 'variables.styl'
+
+.profile-list {
+  padding: 0;
+
+  & > li {
+    list-style: none;
+    background: Color-Soft-Gray;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin: 7px 15px;
+    line-height: 55px;
+    font-size: 32px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .dropdown {
+    margin: 7px 15px;
+
+    button {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      float: inherit;
+
+      &:focus,
+      &:active {
+        background: none !important;
+      }
+
+      i {
+        width: 55px;
+        font-size: 32px;
+        line-height: 55px;
+      }
+
+      .caret {
+        display: none;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &.open {
+      button {
+        background: none;
+        box-shadow: none;
+      }
+    }
+
+    .dropdown-menu {
+      li {
+        a {
+          color: Color-Gray-Letter;
+          display: block;
+          text-decoration: none;
+          font-size: 1em;
+          padding: 5px 12px;
+
+          &:hover {
+            background: Color-Copper;
+            color #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.app-modal .profile-list {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}

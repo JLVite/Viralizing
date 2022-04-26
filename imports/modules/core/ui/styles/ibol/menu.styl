@@ -1,0 +1,103 @@
+@require 'variables.styl'
+
+.site-menubar {
+  background: Color-Black;
+  font-family: 'Raleway', sans-serif;
+
+  .site-menu {
+    .site-menu-item {
+      padding: 8px 0;
+      font-size: 1.4em;
+
+      a {
+        color: Color-White;
+
+        &.active {
+          background: Color-Soft-Gray;
+          color: Color-Black;
+        }
+
+        i {
+          color: Color-Copper;
+          margin-right: 20px;
+        }
+
+        img {
+          transform: scale(1.2)
+        }
+      }
+    }
+
+    li:nth-child(2) {
+      a {
+        &.active {
+          background: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .site-menubar-footer {
+    a {
+      background: Color-Black;
+    }
+  }
+}
+
+.site-menubar-fold {
+  .site-menubar-body {
+    overflow: auto;
+    height: calc(100vh - 76px);
+    padding: 30px 0;
+
+    .site-menu {
+      .site-menu-item {
+        a {
+          line-height: 50px;
+          height: 37px;
+
+          i {
+            font-size: 20px !important;
+          }
+
+          img {
+            height: 23px;
+            top: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .site-menubar-fold .site-navbar .navbar-container {
+    margin-left: 120px;
+  }
+}
+
+.site-menubar-fold {
+  .site-menu-item {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+
+      div {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.site-menubar-unfold {
+  .site-menu-item {
+    a {
+      div {
+        margin-right: 20px
+      }
+    }
+  }
+}

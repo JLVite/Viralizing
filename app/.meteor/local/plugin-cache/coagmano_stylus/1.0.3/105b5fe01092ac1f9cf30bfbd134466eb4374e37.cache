@@ -1,0 +1,2 @@
+{"{}/imports/modules/examples/ui/styles/labels.styl":"6b37d551c11f706522d8b510919f27d342950e2b"}
+{"css":".example > span {\n  margin: 0 16px 8px 0;\n}\n.example-2 > span {\n  margin-right: 35px;\n}\n","sourceMap":{"version":3,"sources":["imports/modules/examples/ui/styles/labels.styl"],"names":[],"mappings":"AAAA;EACE,qBAAA;;AAGF;EACE,mBAAA","sourcesContent":[".example > span {\n  margin: 0 16px 8px 0;\n}\n\n.example-2 > span {\n  margin-right: 35px;\n}\n"]}}

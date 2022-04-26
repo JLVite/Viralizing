@@ -1,0 +1,69 @@
+@require 'variables.styl'
+
+.rbc-calendar {
+
+
+  .rbc-toolbar {
+    .rbc-btn-group {
+      background: Color-Clear-Gray;
+      border: none;
+
+      button {
+        text-transform: capitalize;
+        border: none;
+
+        &.rbc-active {
+          background: Color-Soft-Gray;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .rbc-month-view,
+  .rbc-time-view,
+  .rbc-agenda-view {
+    margin-top: 15px;
+    border: 3px solid Color-Soft-Gray;
+  }
+
+  .rbc-event {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+
+    .rbc-event-content {
+
+
+      .event-post {
+        background: Color-Gray-Letter;
+        padding: 5px;
+      }
+
+      .event-campaign {
+        background: Color-Copper;
+        padding: 5px;
+      }
+
+      .social-avatar {
+        margin-right: 10px;
+
+        i {
+          line-height: 16px;
+          width: 16px;
+          height: 16px;
+          font-size: 10px;
+        }
+      }
+
+      .social-icon.facebook::before {
+        content: "\f09a";
+        padding: 0 !important;
+      }
+    }
+  }
+
+  a {
+    color: Color-Copper;
+  }
+}

@@ -1,0 +1,255 @@
+.advertising {
+  .campaign-header {
+    background: #232323;
+    height: 150px;
+    color: Color-White;
+    margin-top: 0 !important;
+
+    & > div {
+      height: 100%
+    }
+
+    .profile {
+      background: url("https://images.unsplash.com/photo-1473157548731-112b3b175783?dpr=2&auto=format&fit=crop&w=1199&h=912&q=80&cs=tinysrgb&crop=");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .social-avatar {
+        float: left;
+        margin: 32px 34px;
+      }
+
+      .data {
+        float: left;
+        text-transform: uppercase;
+        margin: 10px 0;
+
+        h2 {
+          color: #fff;
+          font-size: 1.5em;
+          margin-bottom: 2px;
+        }
+
+        span {
+          display: block
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    .metrics {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+
+  .campaign-columns {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+
+    & > div {
+      min-height: -webkit-fill-available;
+      border-right: 3px solid Color-Soft-Gray;
+
+      .title {
+        font-size: 1.5em;
+        padding: 15px 0;
+
+        .advertising-button {
+          float: right;
+          padding: 0;
+          margin: 0;
+          background: none;
+          border: none;
+          color: Color-Copper;
+          transform: scale(1.2);
+          margin-right: 5px;
+        }
+      }
+
+      .list {
+        .item {
+          margin: 0 -1.0715rem;
+          padding: 15px;
+          border-bottom: 1px solid #efefef;
+          border-top: 1px solid #efefef;
+          cursor: pointer;
+          margin-top: -1px;
+
+          .title {
+            font-size: 1.1em;
+            padding: 0;
+
+            .name {
+              display: inline-block;
+            }
+          }
+
+          .content {
+            height: 0;
+            overflow hidden;
+            opacity: 0;
+            transition: 0.5s all ease-in-out;
+            color: rgba(255, 255, 255, 0.70);
+
+            .row {
+              margin: 15px 0 5px;
+
+              & > div {
+                padding: 0;
+              }
+            }
+          }
+
+          .status {
+            border: 1px solid Color-Black;
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            transform: translateY(5px);
+            float: right;
+            margin-right: 2px;
+          }
+
+          &.active {
+            background: Color-Black;
+            color: #fff;
+
+            .content {
+              opacity: 1;
+              height: auto;
+            }
+          }
+        }
+      }
+
+      .empty-column {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+          height: 60px;
+          margin-top: -100px;
+        }
+
+        .title {
+          margin-top: 20px
+          font-size: 1.7em;
+        }
+      }
+    }
+  }
+
+
+  .status {
+    width: 12px;
+    height: 12px;
+
+    &.campaign_paused,
+    &.paused {
+      background: #efefef;
+    }
+
+    &.disapproved {
+      background: #ef3939
+    }
+  }
+
+  .ad-view {
+    .blockquote {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      margin-bottom: 20px;
+
+      .name {
+        font-size: 1.2em;
+        padding-right: 1.5em;
+        margin-bottom: 0;
+      }
+
+      .status {
+        float: right;
+        width: 1em;
+        height: 1em;
+        border: none;
+        transform: translateY(-1.5em);
+      }
+
+      .created {
+        font-size: 0.9em;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.advertising-modal {
+  .title {
+    h1 {
+      font-size: 1.8em
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.advertising-accounts {
+  width: 740px;
+  text-align: left;
+
+  .loading-screen {
+    height: 300px;
+    width: 100%;
+  }
+
+  .no-results {
+    height: 300px;
+    width: 100%;
+    display: table;
+
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+      i {
+        font-size: 6em
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  .pages-list {
+
+    .list-group-item {
+      cursor: pointer;
+
+      .media {
+        background: Color-Clear-Gray;
+        padding: 12px;
+        border-radius: 4px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

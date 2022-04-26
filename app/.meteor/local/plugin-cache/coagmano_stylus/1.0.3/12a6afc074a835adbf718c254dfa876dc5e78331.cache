@@ -1,0 +1,2 @@
+{"{}/imports/modules/core/ui/styles/theme.styl":"e01d9097515e6f9a3e2a08329bfe360b59e1445b"}
+{"css":".title-case-dropdown .dropdown-menu li {\n  text-transform: capitalize;\n}\n","sourceMap":{"version":3,"sources":["imports/modules/core/ui/styles/theme.styl"],"names":[],"mappings":"AAEI;EACE,2BAAA","sourcesContent":[".title-case-dropdown{\n  .dropdown-menu{\n    li{\n      text-transform: capitalize;\n    }\n  }\n}"]}}

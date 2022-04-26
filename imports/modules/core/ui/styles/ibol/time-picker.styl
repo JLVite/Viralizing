@@ -1,0 +1,46 @@
+@require 'variables.styl'
+
+.time_picker_container {
+  .time_picker_preview {
+    box-shadow: none !important;
+    font-size: 28px;
+    background: none !important;
+
+    &.active {
+      background-color: Color-Copper !important;
+    }
+
+    .preview_container {
+      padding: 0 !important;
+    }
+  }
+
+  .time_picker_modal_container {
+    background-color: #f9f9f9;
+    width: 100%;
+    text-align: center;
+
+    .time_picker_header {
+      &.active,
+      &:hover {
+        color: Color-Copper;
+      }
+    }
+
+    .picker_container {
+      margin: auto;
+
+      .picker_center {
+        background-color: Color-Copper;
+      }
+
+      .picker_pointer {
+        background-color: Color-Copper;
+
+        .pointer_drag {
+          background-color: Color-Copper;
+        }
+      }
+    }
+  }
+}

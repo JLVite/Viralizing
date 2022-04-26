@@ -1,0 +1,91 @@
+.notifications-wrapper {
+  .notifications-br {
+    bottom: 25px !important;
+    right: 20px !important;
+    width: 360px !important;
+
+    .notification {
+      overflow: hidden;
+      padding-left: 30px !important;
+      margin: 15px 0px 0px !important;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+      height: inherit !important;
+      border: none !important;
+      background: #f9f9f9 !important;
+
+      &::before {
+        content: ' ';
+        width: 120px;
+        height: 120px;
+        background: #adadad;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        margin-top: -60px;
+        border-radius: 50%;
+        left: -110px;
+      }
+
+      .notification-dismiss {
+        font-family: FontAwesome !important;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        text-rendering: auto;
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        color: rgba(0, 0, 0, 0) !important;
+        background: none !important;
+
+        &::before {
+          content: "\f057";
+          color: #d4d4d4;
+        }
+      }
+
+      .title {
+        font-size: 1.5em;
+      }
+
+      .description {
+        color: #bbb;
+        font-size: 1.1em;
+      }
+
+      .time {
+        color: #d7d7d7;
+      }
+
+      &.notification-success {
+        &::before {
+          background: #9DDD6E !important;
+        }
+      }
+
+      &.notification-error {
+        &::before {
+          background: #DF4D6C !important;
+        }
+      }
+
+      &.notification-warning {
+        &::before {
+          background: #f5f04c !important;
+        }
+      }
+
+      &.notification-info {
+        &::before {
+          background: #7FB4FD !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "AWSRegion":"us-east-1",
+  "AWSAccessKeyId":"AKIAJGTCADJITF2H73FA",
+  "AWSSecretAccessKey":"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",
+  "public":{
+    "stripe":{
+      "publishableKey":"pk_test_NniwYVrarccx6qoxb5Reln0u"
+    }
+  },
+  "private": {
+    "paypal":{
+      "clientId":"AW6pl7OKzHwuI-ckqiONYW6Tuw8o23SbRQO02ew0spjXH4lsJPmhNWipsi6HEwNhVcN588FMiRDaDh3L",
+      "secret": "EA1Nq7h97qXXlxM_FfziGr-4doxhdU7XhOpCvXi4INRQ8FNSN_3OrNXdZPtd00UCooIjxD08RkvIXwuF"
+    },
+    "aes": {
+      "passPhrase": "kqD(p>f$$vA^sDjygHn)naGdrVAo%hjXtM9yTBh"
+    },
+    "stripe":{
+      "secretKey":"sk_test_RHR4dL1GMRf2tPOZAXV1ZZRx"
+    },
+    "networks": {
+      "facebook": {
+        "appId": "1192359630860949",
+        "secret": "8e22e0a27cdf0dd6e18e674b02648fdf"
+      },
+      "twitter": {
+        "consumerKey": "FEXwzqUaXtzHxBt0QIdGNHG7R",
+        "secret": "4qSiuGNdo3JkxKRrT0tYQrjvdXTrw9EXFSr4JuNtn0nqFnFJi3"
+      },
+      "instagram": {
+        "clientId": "0aea24cd26c04d03bd70cbe1bde153b9",
+        "secret": "f0c2da14d29f46e6812274bd9082576a"
+      },
+      "google": {
+        "clientId": "666001639290-4ockfbrs6nruqfds6jkugk1g8mctffe2.apps.googleusercontent.com",
+        "secret": "xmMAWuSkSv99ENIjVCHNTUf9",
+        "searchApiKey": "AIzaSyBcythzarlyApVyP89lJ8W4QagEYVhru2E"
+      }
+    }
+  }
+}
